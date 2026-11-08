@@ -24,7 +24,7 @@ X_train_scaled=X_scalling.fit_transform(X_train)
 y_train_scaled=y_scalling.fit_transform(y_train.reshape(-1,1)).ravel()
 
 #Scale X testing data
-X_test_scaled=X_scalling.transform(X_test.reshape(-1,1))
+X_test_scaled=X_scalling.transform(X_test)
 
 #Create SVR model
 model=SVR(kernel='rbf',C=1000,epsilon=0.1)
